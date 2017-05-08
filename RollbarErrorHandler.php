@@ -1,5 +1,8 @@
 <?php
 
+use Rollbar\Rollbar;
+use Rollbar\Payload\Level;
+
 class RollbarErrorHandler extends CErrorHandler
 {
     protected function handleException($exception)
