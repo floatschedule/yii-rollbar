@@ -19,7 +19,7 @@ class RollbarLogRoute extends CLogRoute
         foreach ($logs as $log) {
             // Exclude records by the exceptions handler. RollbarErrorHandler takes care of them.
             if (strncmp($log[2], 'exception', 9) !== 0) {
-                Rollbar::report_message($log[0], $this->correspondingLevel($log[1]));
+                Rollbar::log($this->correspondingLevel($log[1]), $log[0]);
             }
         }
     }
