@@ -42,6 +42,8 @@ class RollbarComponent extends CApplicationComponent
             $key = 'root';
         }
         $key = $this->underscore($key);
+
+        return $key;
     }
 
     /**
