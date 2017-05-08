@@ -19,12 +19,12 @@ class RollbarComponent extends CApplicationComponent
 
     public function __set($key, $value)
     {
-      $key = $this->normalizeWithCompatibility($key);
+        $key = $this->normalizeWithCompatibility($key);
 
-      if ($key === 'root') {
+        if ($key === 'root') {
           $value = Yii::getPathOfAlias( $value ) ? Yii::getPathOfAlias( $value ) : $value;
-      }
-      $this->config[$key] = $value;
+        }
+        $this->config[$key] = $value;
     }
 
     protected function setDefaults()
