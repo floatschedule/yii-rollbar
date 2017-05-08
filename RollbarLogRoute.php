@@ -12,9 +12,6 @@ class RollbarLogRoute extends CLogRoute
         if (Yii::app()->getComponent($this->rollbarComponentName) === null) {
             throw new CException('Rollbar component is not loaded.');
         }
-        if (!class_exists('Rollbar', false)) {
-            throw new CException('Rollbar class is not loaded.');
-        }
     }
 
     protected function processLogs($logs)
