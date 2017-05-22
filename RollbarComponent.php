@@ -4,7 +4,7 @@ use Rollbar\Rollbar;
 
 class RollbarComponent extends CApplicationComponent
 {
-    private $config = [];
+    private $config = array();
 
     public function __construct()
     {
@@ -22,7 +22,7 @@ class RollbarComponent extends CApplicationComponent
         $key = $this->normalizeWithCompatibility($key);
 
         if ($key === 'root') {
-          $value = Yii::getPathOfAlias( $value ) ? Yii::getPathOfAlias( $value ) : $value;
+            $value = Yii::getPathOfAlias($value) ? Yii::getPathOfAlias($value) : $value;
         }
         $this->config[$key] = $value;
     }
@@ -30,7 +30,7 @@ class RollbarComponent extends CApplicationComponent
     protected function setDefaults()
     {
         $this->root = Yii::getPathOfAlias('application');
-        $this->scrub_fields = ['passwd', 'password', 'secret', 'auth_token', 'YII_CSRF_TOKEN'];
+        $this->scrub_fields = array('passwd', 'password', 'secret', 'auth_token', 'YII_CSRF_TOKEN');
     }
 
     /**
