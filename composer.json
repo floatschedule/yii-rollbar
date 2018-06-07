@@ -4,6 +4,6 @@
     "keywords": ["rollbar", "ratchetio", "ratchet.io", "yii", "log", "error", "exception", "debug", "monitoring"],
     "require": {
         "php": ">=7.1",
-        "rollbar/rollbar": "1.5.0"
+        "rollbar/rollbar": "1.5.1"
     }
 }
