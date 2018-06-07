@@ -1,5 +1,5 @@
 {
-    "name": "baibaratsky/yii-rollbar",
+    "name": "floatschedule/yii-rollbar",
     "description": "Rollbar Yii Extension",
     "keywords": ["rollbar", "ratchetio", "ratchet.io", "yii", "log", "error", "exception", "debug", "monitoring"],
     "license": "BSD-3-Clause",
