@@ -1,9 +1,9 @@
 {
     "name": "floatschedule/yii-rollbar",
     "description": "Rollbar Yii Extension",
-    "keywords": ["rollbar", "ratchetio", "ratchet.io", "yii", "log", "error", "exception", "debug", "monitoring"],
+    "keywords": ["rollbar", "ratchet.io", "yii", "log", "error", "exception", "debug", "monitoring"],
     "require": {
         "php": ">=7.1",
-        "rollbar/rollbar": "1.5.3"
+        "rollbar/rollbar": "1.7.5"
     }
 }
